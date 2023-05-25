@@ -4,7 +4,7 @@
 }
 * h2 {
   color: #66FCF1;
-  margin-top: 10%;
+  margin: 10% 0 5% 0;
 }
 * h3 {
   color: #45A29E;
@@ -15,7 +15,6 @@
 * body header {
   position: sticky;
   background-color: #1F2833;
-  margin: 1%;
   display: flex;
   justify-content: space-between;
 }
@@ -26,26 +25,33 @@
   margin: auto;
 }
 * body div {
-  width: 70%;
+  width: 75%;
   display: flex;
   align-items: flex-start;
   margin: auto;
   flex-direction: column;
 }
+* body div div span {
+  margin-top: 30px;
+}
 * body div div div {
   width: 100%;
-}
-* body div div div .item {
-  width: 95%;
 }
 * body div div .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
 }
 * body div div .grid .item {
+  width: 100%;
+  height: 150px;
+  border-radius: 2%;
   background-color: #1F2833;
-  margin: 5px;
   align-items: center;
+  justify-content: center;
+}
+* body div div .grid .item h3 {
+  padding: 0 25px;
 }
 * body footer {
   background-color: #1F2833;
