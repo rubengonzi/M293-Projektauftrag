@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Portfolio: Ruben Gonzalez Garcia</title>
 </head>
 
 <body>
     <header>
-        <a href="">Ruben Gonzalez Garcia</a>
+        <a href="#">Ruben Gonzalez Garcia</a>
         <nav>
             <a href="#about">Über mich</a>
             <a href="#abilities">Fähigkeiten</a>
@@ -21,7 +21,7 @@
     </header>
 
     <div>
-        <div>
+        <div class="section title">
             <h1>Ruben</h1>
             <h1>Gonzalez Garcia</h1>
         </div>
@@ -39,10 +39,10 @@
                     <h3>TOREPLACE</h3>
                 </div>
             </div>
-            <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                 labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
                 et
-                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
 
         <div id="abilities" class="section abilities">
@@ -71,32 +71,44 @@
 
         <div id="portfolio" class="section portfolio">
             <h2>Portfolio</h2>
-            <div class="section grid oneColumn">
+            <div class="grid oneColumn">
                 <div class="grid twoColumns">
-                    <img src="music_production.jpg" alt="Tonstudio in San Francisco">
+                    <img src="../img/music_production.jpg" alt="Tonstudio in San Francisco" loading="lazy">
                     <div class="item">
                         <h3>Musikproduktion</h3>
-                        <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
                             et
-                            ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
+                            ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
                     </div>
                 </div>
                 <div class="grid twoColumns">
                     <div class="item">
                         <h3>Programmieren</h3>
-                        <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
                             et
-                            ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
+                            ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
                     </div>
-                    <img src="coding.png" alt="Foto von einem Python-Skript">
+                    <img src="../img/coding.png" alt="Foto von einem Python-Skript" loading="lazy">
                 </div class="item">
                 <div class="grid twoColumns">
-                    <img src="" alt="">
-                    <div>
-                        <h3></h3>
-                        <span></span>
+                    <img src="../img/football.jpg" alt="Tor von Divock Origi im Champions League Finale 2019" loading="lazy">
+                    <div class="item">
+                        <h3>Fussball</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores
+                            et
+                            ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -105,7 +117,12 @@
         <div id="contact" class="section contact">
             <h2>Kontakt</h2>
             <div>
-
+                <div class="grid twoColumns">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="E-Mail">
+                </div>
+                <textarea placeholder="Nachricht"></textarea>
+                <button>Absenden</button>
             </div>
         </div>
     </div>

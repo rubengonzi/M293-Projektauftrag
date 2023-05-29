@@ -1,0 +1,156 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #C5C6C7;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html h2 {
+  color: #66FCF1;
+  margin: 80px 0 40px 0;
+}
+html h3 {
+  color: #45A29E;
+}
+html body {
+  background-color: #0B0C10;
+}
+html body header {
+  position: fixed;
+  background-color: #1F2833;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 8px;
+  width: 98%;
+  z-index: 1;
+  left: 1%;
+  top: 1%;
+}
+html body header a {
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+html body header nav {
+  margin: auto;
+}
+html body header nav a {
+  transition: background-color 0.3s ease;
+}
+html body header nav a:hover {
+  background-color: #0B0C10;
+}
+html body div {
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  flex-direction: column;
+}
+html body div div {
+  width: 100%;
+}
+html body div .grid {
+  display: grid;
+  grid-gap: 15px;
+}
+html body div .oneColumn {
+  grid-template-columns: 1fr;
+}
+html body div .twoColumns {
+  grid-template-columns: repeat(2, 1fr);
+}
+html body div .threeColumns {
+  grid-template-columns: repeat(3, 1fr);
+}
+html body div .section {
+  margin-bottom: 70px;
+}
+html body div .abilities div .item, html body div .about div .item {
+  height: 150px;
+  border-radius: 5px;
+  background-color: #1F2833;
+  align-items: center;
+  justify-content: center;
+}
+html body div .abilities div .item h3, html body div .about div .item h3 {
+  margin: 0 25px;
+}
+html body div .about p {
+  margin-top: 30px;
+}
+html body div .portfolio img {
+  width: 100%;
+  border-radius: 5px;
+}
+html body div .portfolio .item {
+  padding-left: 10px;
+}
+html body div .portfolio .item h3 {
+  margin: 5px 0 20px 0;
+}
+html body div .portfolio .item p {
+  padding-right: 25px;
+}
+html body div .contact div {
+  margin-bottom: 10px;
+}
+html body div .contact textarea, html body div .contact input {
+  background-color: #1F2833;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+html body div .contact textarea::-moz-placeholder, html body div .contact input::-moz-placeholder {
+  position: absolute;
+  left: 10px;
+  color: #C5C6C7;
+}
+html body div .contact textarea::placeholder, html body div .contact input::placeholder {
+  position: absolute;
+  left: 10px;
+  color: #C5C6C7;
+}
+html body div .contact input {
+  width: 96%;
+  height: 35px;
+}
+html body div .contact textarea {
+  resize: none;
+  width: 98%;
+  height: 200px;
+}
+html body div .contact input::-moz-placeholder {
+  top: 17.5px;
+}
+html body div .contact input::placeholder {
+  top: 17.5px;
+}
+html body div .contact textarea::-moz-placeholder {
+  top: 10px;
+}
+html body div .contact textarea::placeholder {
+  top: 10px;
+}
+html body div .contact input:focus,
+html body div .contact textarea:focus {
+  outline: none;
+}
+html body div .contact button {
+  background-color: #45A29E;
+  border: none;
+  height: 40px;
+  width: 180px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+html body footer {
+  width: 100%;
+  height: 400px;
+  background-color: #1F2833;
+}/*# sourceMappingURL=styles.css.map */
