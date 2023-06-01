@@ -1,5 +1,6 @@
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 10px;
   color: #C5C6C7;
   margin: 0;
 }
@@ -7,12 +8,29 @@
 html {
   scroll-behavior: smooth;
 }
+html h1 {
+  font-size: 3em;
+}
 html h2 {
+  font-size: 2em;
   color: #66FCF1;
-  margin: 80px 0 40px 0;
+  margin: 4em 0 3em 0;
 }
 html h3 {
+  font-size: 1.5em;
   color: #45A29E;
+}
+html a,
+html p,
+html span {
+  font-size: 1.4em;
+}
+html ::-moz-placeholder {
+  font-size: 1.3em;
+}
+html button,
+html ::placeholder {
+  font-size: 1.3em;
 }
 html body {
   background-color: #0B0C10;
@@ -42,7 +60,7 @@ html body header {
   top: 1%;
 }
 html body header a {
-  margin: 0 10px;
+  margin: 0 0.8em;
   text-decoration: none;
   width: -moz-fit-content;
   width: fit-content;
@@ -52,98 +70,106 @@ html body header nav {
   justify-content: center;
 }
 html body header nav a {
-  padding: 8px 10px;
-  border-radius: 5px;
+  white-space: nowrap;
+  padding: 0.8em 1em;
+  border-radius: 0.5em;
   transition: background-color 0.3s ease;
 }
 html body header nav a:hover {
   background-color: #0B0C10;
 }
 html body div {
-  width: 60%;
   display: flex;
   align-items: flex-start;
   margin: auto;
   flex-direction: column;
 }
-html body div div {
+html body .sectionContainer {
+  width: 60%;
+}
+html body .sectionContainer div {
   width: 100%;
 }
-html body div .section {
+html body .sectionContainer .section {
   margin-bottom: 70px;
 }
-html body div .abilities div .item, html body div .about div .item {
+html body .sectionContainer .abilities div .item, html body .sectionContainer .about div .item {
   height: 150px;
   border-radius: 5px;
   background-color: #1F2833;
   align-items: center;
   justify-content: center;
 }
-html body div .abilities div .item h3, html body div .about div .item h3 {
-  margin: 0 25px;
+html body .sectionContainer .abilities div .item h3, html body .sectionContainer .about div .item h3 {
+  margin: 0 2em;
 }
-html body div .about p {
-  margin-top: 30px;
+html body .sectionContainer .about div .item img {
+  fill: #45A29E;
+  width: 40px;
+  margin-top: 25px;
 }
-html body div .portfolio img {
+html body .sectionContainer .about p {
+  margin-top: 3em;
+}
+html body .sectionContainer .portfolio img {
   width: 100%;
   border-radius: 5px;
 }
-html body div .portfolio .item {
+html body .sectionContainer .portfolio .item {
   padding-left: 10px;
 }
-html body div .portfolio .item h3 {
-  margin: 5px 0 20px 0;
+html body .sectionContainer .portfolio .item h3 {
+  margin: 0.5em 0 2em 0;
 }
-html body div .portfolio .item p {
-  padding-right: 25px;
+html body .sectionContainer .portfolio .item p {
+  padding-right: 2.5em;
 }
-html body div .contact div {
+html body .sectionContainer .contact div {
   margin-bottom: 10px;
 }
-html body div .contact textarea, html body div .contact input {
+html body .sectionContainer .contact textarea, html body .sectionContainer .contact input {
   background-color: #1F2833;
   border: none;
   border-radius: 5px;
   padding: 10px;
 }
-html body div .contact textarea::-moz-placeholder, html body div .contact input::-moz-placeholder {
+html body .sectionContainer .contact textarea::-moz-placeholder, html body .sectionContainer .contact input::-moz-placeholder {
   position: absolute;
   left: 10px;
   color: #C5C6C7;
 }
-html body div .contact textarea::placeholder, html body div .contact input::placeholder {
+html body .sectionContainer .contact textarea::placeholder, html body .sectionContainer .contact input::placeholder {
   position: absolute;
   left: 10px;
   color: #C5C6C7;
 }
-html body div .contact input {
+html body .sectionContainer .contact input {
   width: 96%;
   height: 35px;
 }
-html body div .contact textarea {
+html body .sectionContainer .contact textarea {
   resize: none;
   width: 98%;
   height: 200px;
 }
-html body div .contact input::-moz-placeholder {
+html body .sectionContainer .contact input::-moz-placeholder {
   top: 17.5px;
 }
-html body div .contact input::placeholder {
+html body .sectionContainer .contact input::placeholder {
   top: 17.5px;
 }
-html body div .contact textarea::-moz-placeholder {
+html body .sectionContainer .contact textarea::-moz-placeholder {
   top: 10px;
 }
-html body div .contact textarea::placeholder {
+html body .sectionContainer .contact textarea::placeholder {
   top: 10px;
 }
-html body div .contact input:focus,
-html body div .contact textarea:focus,
-html body div .contact button:focus {
+html body .sectionContainer .contact input:focus,
+html body .sectionContainer .contact textarea:focus,
+html body .sectionContainer .contact button:focus {
   outline: none;
 }
-html body div .contact button {
+html body .sectionContainer .contact button {
   background-color: #45A29E;
   border: none;
   height: 40px;
