@@ -68,6 +68,7 @@ html body header {
 html body header nav {
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 html body header nav a {
   margin: 0.8em;
@@ -98,7 +99,7 @@ html body div {
   flex-direction: column;
 }
 html body .sectionContainer {
-  width: 60%;
+  width: 50%;
 }
 html body .sectionContainer div {
   width: 100%;
@@ -214,4 +215,44 @@ html body footer ul li a {
 }
 html body footer ul li a img {
   width: 25px;
+}
+@media screen and (max-width: 1350px) {
+  html body .sectionContainer {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1350px) and (max-width: 1050px) {
+  html body .sectionContainer {
+    width: 80%;
+  }
+  html body .sectionContainer .abilities div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1350px) and (max-width: 1050px) and (max-width: 800px) {
+  html body header nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  html body .sectionContainer .portfolio div {
+    grid-template-columns: 1fr;
+  }
+  html body .sectionContainer .portfolio div img {
+    order: 1;
+  }
+}
+@media screen and (max-width: 1350px) and (max-width: 1050px) and (max-width: 800px) and (max-width: 650px) {
+  html body .sectionContainer .abilities div {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 1350px) and (max-width: 1050px) and (max-width: 800px) and (max-width: 650px) and (max-width: 500px) {
+  html body .sectionContainer .title {
+    display: block;
+  }
+  html body .sectionContainer .title img {
+    width: 200px;
+  }
+  html body .sectionContainer .about div {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=styles.css.map */

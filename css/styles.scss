@@ -78,6 +78,7 @@ html {
             nav {
                 justify-content: center;
                 align-items: center;
+                width: 100%;
 
                 a {
                     margin: 0.8em;
@@ -113,7 +114,7 @@ html {
         }
 
         .sectionContainer {
-            width: 60%;
+            width: 50%;
 
             div {
                 width: 100%;
@@ -267,6 +268,60 @@ html {
 
                         img {
                             width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen {
+            @media (max-width: 1350px) {
+                .sectionContainer {
+                    width: 60%;
+                }
+
+                @media (max-width: 1050px) {
+                    .sectionContainer {
+                        width: 80%;
+    
+                        .abilities div {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                    }
+
+                    @media (max-width: 800px) {
+                        header nav {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+        
+                        .sectionContainer .portfolio div {
+                            grid-template-columns: 1fr;
+        
+                            img {
+                                order: 1;
+                            }
+                        }
+
+                        @media (max-width: 650px) {
+                            .sectionContainer .abilities div {
+                                grid-template-columns: 1fr;
+                            }
+
+                            @media (max-width: 500px) {
+                                .sectionContainer {
+                                    .title {
+                                        display: block;
+                
+                                        img {
+                                            width: 200px;
+                                        }
+                                    }
+                
+                                    .about div {
+                                        grid-template-columns: 1fr;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
