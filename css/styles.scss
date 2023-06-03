@@ -3,11 +3,13 @@
     font-size: 10px;
     color: #C5C6C7;
     margin: 0;
+    padding: 0;
 }
 
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 
     h1 {
         font-size: 3em;
@@ -31,8 +33,13 @@ html {
     }
 
     button,
-    ::placeholder {
+    input,
+    textarea {
         font-size: 1.3em;
+    }
+
+    ul {
+        list-style-type: none;
     }
 
     body {
@@ -56,35 +63,44 @@ html {
         }
 
         header {
+            display: flex;
             position: fixed;
             background-color: #1F2833;
             align-items: center;
-            height: 50px;
+            min-height: 50px;
+            height: max-content;
             border-radius: 8px;
             width: 98%;
             z-index: 1;
             left: 1%;
             top: 1%;
 
-            a {
-                margin: 0 0.8em;
-                text-decoration: none;
-                width: fit-content;
-            }
-
             nav {
-                display: flex;
                 justify-content: center;
+                align-items: center;
 
                 a {
-                    white-space: nowrap;
-                    padding: 0.8em 1em;
-                    border-radius: 0.5em;
-                    transition: background-color 0.3s ease;
+                    margin: 0.8em;
+                    text-decoration: none;
+                    width: fit-content;
                 }
 
-                a:hover {
-                    background-color: #0B0C10;
+                ul {
+                    display: flex;
+                    width: max-content;
+                    justify-self: center;
+
+                    a {
+                        margin: 0 0.8em 0 0.8em;
+                        white-space: nowrap;
+                        padding: 0.7em 0.8em;
+                        border-radius: 0.5em;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    a:hover {
+                        background-color: #0B0C10;
+                    }
                 }
             }
         }
@@ -107,6 +123,21 @@ html {
                 margin-bottom: 70px;
             }
 
+            .title {
+                margin-top: 80px;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                img {
+                    width: 300px;
+                    background-blend-mode: overlay;
+                }
+
+                h1 {
+                    margin-bottom: 1.5em;
+                }
+            }
+
             %aboutAndAbilities {
                 div .item {
                     height: 150px;
@@ -127,7 +158,12 @@ html {
                 div .item img {
                     fill: #45A29E;
                     width: 40px;
-                    margin-top: 25px;
+                    margin-bottom: 15px;
+                }
+
+                span {
+                    font-size: 1.3em nm;
+                    margin-top: 0.5em;
                 }
 
                 p {
@@ -146,7 +182,7 @@ html {
                 }
 
                 .item {
-                    padding-left: 10px;
+                    padding: 5px 0 20px 10px;
 
                     h3 {
                         margin: 0.5em 0 2em 0;
@@ -170,12 +206,6 @@ html {
                     padding: 10px;
                 }
 
-                %placeholder {
-                    position: absolute;
-                    left: 10px;
-                    color: #C5C6C7;
-                }
-
                 input {
                     @extend %contactFormInputAreas;
                     width: 96%;
@@ -187,16 +217,6 @@ html {
                     resize: none;
                     width: 98%;
                     height: 200px;
-                }
-
-                input::placeholder {
-                    @extend %placeholder;
-                    top: 17.5px;
-                }
-
-                textarea::placeholder {
-                    @extend %placeholder;
-                    top: 10px;
                 }
 
                 input:focus,
@@ -218,17 +238,38 @@ html {
         }
 
         footer {
-            width: 100%;
-            height: 300px;
+            width: 100vw;
+            height: 250px;
             background-color: #1F2833;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
-            span,
-            div {
-                display: block;
+            span {
+                font-size: 1.8em;
+                margin-bottom: 1em;
+            }
+
+            ul {
+                display: flex;
+
+                li {
+                    margin: 8px;
+
+                    a {
+                        padding: 0.5em;
+                        border-radius: 4px;
+                        background-color: #C5C6C7;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+
+                        img {
+                            width: 25px;
+                        }
+                    }
+                }
             }
         }
     }

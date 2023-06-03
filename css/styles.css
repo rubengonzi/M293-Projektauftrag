@@ -3,10 +3,12 @@
   font-size: 10px;
   color: #C5C6C7;
   margin: 0;
+  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 html h1 {
   font-size: 3em;
@@ -25,12 +27,13 @@ html p,
 html span {
   font-size: 1.4em;
 }
-html ::-moz-placeholder {
+html button,
+html input,
+html textarea {
   font-size: 1.3em;
 }
-html button,
-html ::placeholder {
-  font-size: 1.3em;
+html ul {
+  list-style-type: none;
 }
 html body {
   background-color: #0B0C10;
@@ -49,33 +52,43 @@ html body .threeColumns {
   grid-template-columns: repeat(3, 1fr);
 }
 html body header {
+  display: flex;
   position: fixed;
   background-color: #1F2833;
   align-items: center;
-  height: 50px;
+  min-height: 50px;
+  height: -moz-max-content;
+  height: max-content;
   border-radius: 8px;
   width: 98%;
   z-index: 1;
   left: 1%;
   top: 1%;
 }
-html body header a {
-  margin: 0 0.8em;
+html body header nav {
+  justify-content: center;
+  align-items: center;
+}
+html body header nav a {
+  margin: 0.8em;
   text-decoration: none;
   width: -moz-fit-content;
   width: fit-content;
 }
-html body header nav {
+html body header nav ul {
   display: flex;
-  justify-content: center;
+  width: -moz-max-content;
+  width: max-content;
+  justify-self: center;
 }
-html body header nav a {
+html body header nav ul a {
+  margin: 0 0.8em 0 0.8em;
   white-space: nowrap;
-  padding: 0.8em 1em;
+  padding: 0.7em 0.8em;
   border-radius: 0.5em;
   transition: background-color 0.3s ease;
 }
-html body header nav a:hover {
+html body header nav ul a:hover {
   background-color: #0B0C10;
 }
 html body div {
@@ -93,6 +106,18 @@ html body .sectionContainer div {
 html body .sectionContainer .section {
   margin-bottom: 70px;
 }
+html body .sectionContainer .title {
+  margin-top: 80px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+html body .sectionContainer .title img {
+  width: 300px;
+  background-blend-mode: overlay;
+}
+html body .sectionContainer .title h1 {
+  margin-bottom: 1.5em;
+}
 html body .sectionContainer .abilities div .item, html body .sectionContainer .about div .item {
   height: 150px;
   border-radius: 5px;
@@ -106,7 +131,11 @@ html body .sectionContainer .abilities div .item h3, html body .sectionContainer
 html body .sectionContainer .about div .item img {
   fill: #45A29E;
   width: 40px;
-  margin-top: 25px;
+  margin-bottom: 15px;
+}
+html body .sectionContainer .about span {
+  font-size: 1.3em nm;
+  margin-top: 0.5em;
 }
 html body .sectionContainer .about p {
   margin-top: 3em;
@@ -116,7 +145,7 @@ html body .sectionContainer .portfolio img {
   border-radius: 5px;
 }
 html body .sectionContainer .portfolio .item {
-  padding-left: 10px;
+  padding: 5px 0 20px 10px;
 }
 html body .sectionContainer .portfolio .item h3 {
   margin: 0.5em 0 2em 0;
@@ -133,16 +162,6 @@ html body .sectionContainer .contact textarea, html body .sectionContainer .cont
   border-radius: 5px;
   padding: 10px;
 }
-html body .sectionContainer .contact textarea::-moz-placeholder, html body .sectionContainer .contact input::-moz-placeholder {
-  position: absolute;
-  left: 10px;
-  color: #C5C6C7;
-}
-html body .sectionContainer .contact textarea::placeholder, html body .sectionContainer .contact input::placeholder {
-  position: absolute;
-  left: 10px;
-  color: #C5C6C7;
-}
 html body .sectionContainer .contact input {
   width: 96%;
   height: 35px;
@@ -151,18 +170,6 @@ html body .sectionContainer .contact textarea {
   resize: none;
   width: 98%;
   height: 200px;
-}
-html body .sectionContainer .contact input::-moz-placeholder {
-  top: 17.5px;
-}
-html body .sectionContainer .contact input::placeholder {
-  top: 17.5px;
-}
-html body .sectionContainer .contact textarea::-moz-placeholder {
-  top: 10px;
-}
-html body .sectionContainer .contact textarea::placeholder {
-  top: 10px;
 }
 html body .sectionContainer .contact input:focus,
 html body .sectionContainer .contact textarea:focus,
@@ -179,15 +186,32 @@ html body .sectionContainer .contact button {
   cursor: pointer;
 }
 html body footer {
-  width: 100%;
-  height: 300px;
+  width: 100vw;
+  height: 250px;
   background-color: #1F2833;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-html body footer span,
-html body footer div {
-  display: block;
+html body footer span {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+html body footer ul {
+  display: flex;
+}
+html body footer ul li {
+  margin: 8px;
+}
+html body footer ul li a {
+  padding: 0.5em;
+  border-radius: 4px;
+  background-color: #C5C6C7;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+html body footer ul li a img {
+  width: 25px;
 }/*# sourceMappingURL=styles.css.map */

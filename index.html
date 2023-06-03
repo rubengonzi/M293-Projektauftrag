@@ -10,38 +10,53 @@
 </head>
 
 <body>
-    <header class="grid threeColumns">
-        <a href="#">Ruben Gonzalez Garcia</a>
-        <nav>
-            <a href="#about">Über mich</a>
-            <a href="#abilities">Fähigkeiten</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Kontakt</a>
+    <header>
+        <nav class="grid threeColumns">
+            <a href="#">Ruben Gonzalez Garcia</a>
+            <ul>
+                <li>
+                    <a href="#about">Über mich</a>
+                <li>
+                    <a href="#abilities">Fähigkeiten</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Kontakt</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
     <div class="sectionContainer">
-        <div class="section title">
-            <h1>Ruben</h1>
-            <h1>Gonzalez Garcia</h1>
+        <div class="section title grid twoColumns">
+            <h1>Ruben<br>Gonzalez Garcia</h1>
+            <img src="img/me.png" alt="Porträt von mir">
         </div>
 
         <div id="about" class="section about">
             <h2>Über mich</h2>
             <div class="grid threeColumns">
                 <div class="item">
+                    <img src="svg/about/briefcase.svg" alt="Aktenkoffer" loading="lazy">
                     <h3>Lehre</h3>
-                    <img src="svg/briefcase.svg" alt="Koffer-Icon">
+                    <span>1. Jahr</span>
                 </div>
                 <div class="item">
+                    <img src="svg/about/graduation-cap.svg" alt="Doktorhut" loading="lazy">
                     <h3>Schule</h3>
-                    <img src="svg/graduation-cap.svg" alt="Schule-Icon">
+                    <span>9 Jahre</span>
                 </div>
                 <div class="item">
-                    <h3>TOREPLACE</h3>
+                    <img src="svg/about/birthday-cake.svg" alt="Geburtstagskuchen" loading="lazy">
+                    <h3>Alter</h3>
+                    <span>16 Jahre</span>
                 </div>
             </div>
-            <p>Mein Name ist Ruben Gonzalez Garcia und ich bin 16 Jahre alt. Ich habe neun Jahre die obligatorische Schule besucht und bin nun im ersten Lehrjahr als Applikationsentwickler bei der Abraxas Informatik AG.</p>
+            <p>Mein Name ist Ruben Gonzalez Garcia und ich bin 16 Jahre alt. Ich habe neun Jahre lang die obligatorische
+                Schule besucht und bin nun im ersten Lehrjahr als Applikationsentwickler bei der Abraxas Informatik AG.
+            </p>
         </div>
 
         <div id="abilities" class="section abilities">
@@ -96,7 +111,7 @@
                         </p>
                     </div>
                     <img src="img/coding.png" alt="Foto von einem Python-Skript" loading="lazy">
-                </div class="item">
+                </div>
                 <div class="grid twoColumns">
                     <img src="img/football.jpg" alt="Tor von Divock Origi im Champions League Finale 2019"
                         loading="lazy">
@@ -128,12 +143,28 @@
     </div>
     <footer>
         <span>Ruben Gonzalez Garcia</span>
-        <div class="icons">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
+        <ul class="icons">
+            <li>
+                <a href="mailto:rubengonzalezgarcia@edu.gbssg.ch" target="_blank">
+                    <img src="svg/footer/letter.svg" alt="E-Mail" loading="lazy">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/rubengonzi" target="_blank">
+                    <img src="svg/footer/github.svg" alt="GitHub" loading="lazy">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.figma.com/files/user/1204709447940985271?fuid=1204709447940985271" target="_blank">
+                    <img src="svg/footer/figma.svg" alt="Figma" loading="lazy">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/rubengonzalezgarccia/" target="_blank">
+                    <img src="svg/footer/instagram.svg" alt="Instagram" loading="lazy">
+                </a>
+            </li>
+        </ul>
     </footer>
 </body>
 
