@@ -131,14 +131,14 @@
 
         <div id="contact" class="section contact">
             <h2>Kontakt</h2>
-            <div>
+            <form action="https://formsubmit.co/c4726c02c9565be54f1c2e0e75f05b69" method="POST">
                 <div class="grid twoColumns">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="E-Mail">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="E-Mail" placeholder="E-Mail" required>
                 </div>
-                <textarea placeholder="Nachricht"></textarea>
-                <button>Absenden</button>
-            </div>
+                <textarea placeholder="Nachricht" name="Message" required></textarea>
+                <button type="submit">Absenden</button>
+            </form>
         </div>
     </div>
     <footer>

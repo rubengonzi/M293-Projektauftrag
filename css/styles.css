@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 html h1 {
   font-size: 3em;
@@ -154,30 +155,33 @@ html body .sectionContainer .portfolio .item h3 {
 html body .sectionContainer .portfolio .item p {
   padding-right: 2.5em;
 }
-html body .sectionContainer .contact div {
+html body .sectionContainer .contact form {
+  width: 100%;
+}
+html body .sectionContainer .contact form div {
   margin-bottom: 10px;
 }
-html body .sectionContainer .contact textarea, html body .sectionContainer .contact input {
+html body .sectionContainer .contact form textarea, html body .sectionContainer .contact form input {
   background-color: #1F2833;
   border: none;
   border-radius: 5px;
   padding: 10px;
 }
-html body .sectionContainer .contact input {
+html body .sectionContainer .contact form input {
   width: 96%;
   height: 35px;
 }
-html body .sectionContainer .contact textarea {
+html body .sectionContainer .contact form textarea {
   resize: none;
   width: 98%;
   height: 200px;
 }
-html body .sectionContainer .contact input:focus,
-html body .sectionContainer .contact textarea:focus,
-html body .sectionContainer .contact button:focus {
+html body .sectionContainer .contact form input:focus,
+html body .sectionContainer .contact form textarea:focus,
+html body .sectionContainer .contact form button:focus {
   outline: none;
 }
-html body .sectionContainer .contact button {
+html body .sectionContainer .contact form button {
   background-color: #45A29E;
   border: none;
   height: 40px;
@@ -264,7 +268,15 @@ html body footer ul li a img {
   html body header nav a {
     font-size: 0.7em;
   }
+  html body .sectionContainer .abilities div .item h3 {
+    font-size: 1.2em;
+  }
   html body .sectionContainer .contact button {
     padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1350px) and (max-width: 1100px) and (max-width: 800px) and (max-width: 650px) and (max-width: 500px) and (max-width: 400px) and (max-width: 280px) {
+  html body header nav a {
+    font-size: 0.5em;
   }
 }/*# sourceMappingURL=styles.css.map */

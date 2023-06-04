@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 
     h1 {
         font-size: 3em;
@@ -196,44 +197,48 @@ html {
             }
 
             .contact {
-                div {
-                    margin-bottom: 10px;
-                }
+                form {
+                    width: 100%;
 
-                %contactFormInputAreas {
-                    background-color: #1F2833;
-                    border: none;
-                    border-radius: 5px;
-                    padding: 10px;
-                }
+                    div {
+                        margin-bottom: 10px;
+                    }
 
-                input {
-                    @extend %contactFormInputAreas;
-                    width: 96%;
-                    height: 35px;
-                }
+                    %contactFormInputAreas {
+                        background-color: #1F2833;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 10px;
+                    }
 
-                textarea {
-                    @extend %contactFormInputAreas;
-                    resize: none;
-                    width: 98%;
-                    height: 200px;
-                }
+                    input {
+                        @extend %contactFormInputAreas;
+                        width: 96%;
+                        height: 35px;
+                    }
 
-                input:focus,
-                textarea:focus,
-                button:focus {
-                    outline: none;
-                }
+                    textarea {
+                        @extend %contactFormInputAreas;
+                        resize: none;
+                        width: 98%;
+                        height: 200px;
+                    }
 
-                button {
-                    background-color: #45A29E;
-                    border: none;
-                    height: 40px;
-                    padding: 0 50px;
-                    margin-top: 15px;
-                    border-radius: 5px;
-                    cursor: pointer;
+                    input:focus,
+                    textarea:focus,
+                    button:focus {
+                        outline: none;
+                    }
+
+                    button {
+                        background-color: #45A29E;
+                        border: none;
+                        height: 40px;
+                        padding: 0 50px;
+                        margin-top: 15px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -283,7 +288,7 @@ html {
                 @media (max-width: 1100px) {
                     .sectionContainer {
                         width: 80%;
-    
+
                         .abilities div {
                             grid-template-columns: repeat(2, 1fr);
                         }
@@ -298,10 +303,10 @@ html {
                                 font-size: 1em;
                             }
                         }
-        
+
                         .sectionContainer .portfolio div {
                             grid-template-columns: 1fr;
-        
+
                             img {
                                 order: 1;
                             }
@@ -316,12 +321,12 @@ html {
                                 .sectionContainer {
                                     .title {
                                         display: block;
-                
+
                                         img {
                                             width: 200px;
                                         }
                                     }
-                
+
                                     .about div {
                                         grid-template-columns: 1fr;
                                     }
@@ -332,8 +337,20 @@ html {
                                         font-size: 0.7em;
                                     }
 
-                                    .sectionContainer .contact button {
-                                        padding: 0 20px;
+                                    .sectionContainer {
+                                        .abilities div .item h3 {
+                                            font-size: 1.2em;
+                                        }
+
+                                        .contact button {
+                                            padding: 0 20px;
+                                        }
+                                    }
+
+                                    @media (max-width: 280px) {
+                                        header nav a {
+                                            font-size: 0.5em;
+                                        }
                                     }
                                 }
                             }
