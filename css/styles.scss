@@ -9,7 +9,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 
     h1 {
         font-size: 3em;
@@ -132,6 +131,7 @@ html {
                 img {
                     width: 300px;
                     background-blend-mode: overlay;
+                    order: 1;
                 }
 
                 h1 {
@@ -230,7 +230,7 @@ html {
                     background-color: #45A29E;
                     border: none;
                     height: 40px;
-                    width: 180px;
+                    padding: 0 50px;
                     margin-top: 15px;
                     border-radius: 5px;
                     cursor: pointer;
@@ -280,7 +280,7 @@ html {
                     width: 60%;
                 }
 
-                @media (max-width: 1050px) {
+                @media (max-width: 1100px) {
                     .sectionContainer {
                         width: 80%;
     
@@ -291,7 +291,12 @@ html {
 
                     @media (max-width: 800px) {
                         header nav {
-                            grid-template-columns: repeat(2, 1fr);
+                            display: flex !important;
+                            justify-content: space-between;
+
+                            a {
+                                font-size: 1em;
+                            }
                         }
         
                         .sectionContainer .portfolio div {
@@ -319,6 +324,16 @@ html {
                 
                                     .about div {
                                         grid-template-columns: 1fr;
+                                    }
+                                }
+
+                                @media (max-width: 400px) {
+                                    header nav a {
+                                        font-size: 0.7em;
+                                    }
+
+                                    .sectionContainer .contact button {
+                                        padding: 0 20px;
                                     }
                                 }
                             }
