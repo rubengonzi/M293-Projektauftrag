@@ -17,7 +17,7 @@ html {
     h2 {
         font-size: 2em;
         color: #66FCF1;
-        margin: 4em 0 3em 0;
+        margin: 0 0 3em 0;
     }
 
     h3 {
@@ -83,6 +83,7 @@ html {
                     margin: 0.8em;
                     text-decoration: none;
                     width: fit-content;
+                    outline: none;
                 }
 
                 ul {
@@ -121,6 +122,7 @@ html {
 
             .section {
                 margin-bottom: 70px;
+                padding-top: 80px;
             }
 
             .title {
@@ -332,7 +334,7 @@ html {
                                     }
                                 }
 
-                                @media (max-width: 400px) {
+                                @media (max-width: 450px) {
                                     header nav a {
                                         font-size: 0.85em;
                                     }
@@ -347,9 +349,9 @@ html {
                                         }
                                     }
 
-                                    @media (max-width: 320px) {
+                                    @media (max-width: 400px) {
                                         header nav a {
-                                            font-size: 0.5em;
+                                            font-size: 0.6em;
                                         }
                                     }
                                 }

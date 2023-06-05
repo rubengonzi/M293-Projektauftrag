@@ -16,7 +16,7 @@ html h1 {
 html h2 {
   font-size: 2em;
   color: #66FCF1;
-  margin: 4em 0 3em 0;
+  margin: 0 0 3em 0;
 }
 html h3 {
   font-size: 1.5em;
@@ -75,6 +75,7 @@ html body header nav a {
   text-decoration: none;
   width: -moz-fit-content;
   width: fit-content;
+  outline: none;
 }
 html body header nav ul {
   display: flex;
@@ -106,6 +107,7 @@ html body .sectionContainer div {
 }
 html body .sectionContainer .section {
   margin-bottom: 70px;
+  padding-top: 80px;
 }
 html body .sectionContainer .title {
   margin-top: 80px;
@@ -265,7 +267,7 @@ html body footer ul li a img {
     margin-top: 5px;
   }
 }
-@media screen and (max-width: 1350px) and (max-width: 1100px) and (max-width: 800px) and (max-width: 650px) and (max-width: 500px) and (max-width: 400px) {
+@media screen and (max-width: 1350px) and (max-width: 1100px) and (max-width: 800px) and (max-width: 650px) and (max-width: 500px) and (max-width: 450px) {
   html body header nav a {
     font-size: 0.85em;
   }
@@ -276,8 +278,8 @@ html body footer ul li a img {
     padding: 0 20px;
   }
 }
-@media screen and (max-width: 1350px) and (max-width: 1100px) and (max-width: 800px) and (max-width: 650px) and (max-width: 500px) and (max-width: 400px) and (max-width: 320px) {
+@media screen and (max-width: 1350px) and (max-width: 1100px) and (max-width: 800px) and (max-width: 650px) and (max-width: 500px) and (max-width: 450px) and (max-width: 400px) {
   html body header nav a {
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
 }/*# sourceMappingURL=styles.css.map */
