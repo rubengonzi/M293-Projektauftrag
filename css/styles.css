@@ -136,7 +136,7 @@ html body .sectionContainer .about div .item img {
   margin-bottom: 15px;
 }
 html body .sectionContainer .about span {
-  font-size: 1.3em nm;
+  font-size: 1.3em;
   margin-top: 0.5em;
 }
 html body .sectionContainer .about p {
@@ -158,9 +158,6 @@ html body .sectionContainer .portfolio .item p {
 html body .sectionContainer .contact form {
   width: 100%;
 }
-html body .sectionContainer .contact form div {
-  margin-bottom: 10px;
-}
 html body .sectionContainer .contact form textarea, html body .sectionContainer .contact form input {
   background-color: #1F2833;
   border: none;
@@ -172,6 +169,7 @@ html body .sectionContainer .contact form input {
   height: 35px;
 }
 html body .sectionContainer .contact form textarea {
+  margin-top: 10px;
   resize: none;
   width: 98%;
   height: 200px;
@@ -263,10 +261,13 @@ html body footer ul li a img {
   html body .sectionContainer .about div {
     grid-template-columns: 1fr;
   }
+  html body .sectionContainer .contact form textarea {
+    margin-top: 5px;
+  }
 }
 @media screen and (max-width: 1350px) and (max-width: 1100px) and (max-width: 800px) and (max-width: 650px) and (max-width: 500px) and (max-width: 400px) {
   html body header nav a {
-    font-size: 0.7em;
+    font-size: 0.85em;
   }
   html body .sectionContainer .abilities div .item h3 {
     font-size: 1.2em;
@@ -275,7 +276,7 @@ html body footer ul li a img {
     padding: 0 20px;
   }
 }
-@media screen and (max-width: 1350px) and (max-width: 1100px) and (max-width: 800px) and (max-width: 650px) and (max-width: 500px) and (max-width: 400px) and (max-width: 280px) {
+@media screen and (max-width: 1350px) and (max-width: 1100px) and (max-width: 800px) and (max-width: 650px) and (max-width: 500px) and (max-width: 400px) and (max-width: 320px) {
   html body header nav a {
     font-size: 0.5em;
   }
